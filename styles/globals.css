@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-primary a {
+      @apply flex items-center justify-center h-full border-solid 
+      border-transparent border-b-2 px-2 hover:border-b-[#4f46e5] 
+      transition-all duration-300 ease-in-out;
+    }
+
+    .nav-primary a.nav-active {
+      @apply text-[#8b5cf6] border-b-[#4f46e5];
+    }
+  }
